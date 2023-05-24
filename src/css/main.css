@@ -14,14 +14,14 @@ html {
 }
 
 body {
-  min-width: 1400px;
+  min-width: 320px;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 400;
 }
 
 .container {
-  width: 1256px;
+  max-width: 1256px;
   margin: 0 auto;
   padding: 124px 20px;
 }
@@ -79,6 +79,22 @@ body {
   gap: 28px;
   align-items: center;
 }
+
+.burger-button {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .header__socials-list,
+  .header__nav-list {
+    display: none;
+  }
+
+  .burger-button {
+    display: flex;
+  }
+}
+
 
 .hero {
 
@@ -184,7 +200,7 @@ body {
   transform: rotate(180deg);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
@@ -247,6 +263,16 @@ body {
   color: #FFFFFF;
 }
 
+@media (max-width: 1024px) {
+  .articles__list {
+    flex-direction: column;
+  }
+
+  .articles__item {
+    width: 100%;
+  }
+}
+
 .footer__container {
   display: flex;
   justify-content: space-between;
@@ -274,4 +300,11 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #394573;
+}
+
+@media (max-width: 1024px) {
+  .footer__container {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
