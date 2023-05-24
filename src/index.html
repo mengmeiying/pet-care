@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/montserrat.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Pet Care</title>
@@ -37,17 +38,38 @@
   </header>
   <main>
     <section class="hero">
-      <div class="container">
-        <div class="slider">
-          <div class="slide">
-            <div class="hero__content">
-              <h2 class="title-reset hero__title">Мы заботимся
-                о ваших питомцах</h2>
-              <p class="text-reset hero__text">Записывайтесь в ветклиники
-                и консультируйтесь с ветеринарным врачом онлайн</p>
-              <a href="#" class="link-reset hero__link">Связаться с нами</a>
+
+        <div class="swiper hero__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hero__slide slide slide--cat">
+                <div class="container hero__container"><div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="hero__content">
+                  <h2 class="title-reset hero__title">Мы заботимся
+                    о ваших питомцах</h2>
+                  <p class="text-reset hero__text">Записывайтесь в ветклиники
+                    и консультируйтесь с ветеринарным врачом онлайн</p>
+                  <a href="#" class="link-reset hero__link slide--cat__link">Связаться с нами</a>
+                </div></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero__slide slide slide--dog">
+                <div class="container hero__container"><div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="hero__content">
+                  <h2 class="title-reset hero__title slide--dog__title">Мы заботимся
+                    о ваших питомцах</h2>
+                  <p class="text-reset hero__text slide--dog__text">Записывайтесь в ветклиники
+                    и консультируйтесь с ветеринарным врачом онлайн</p>
+                  <a href="#" class="link-reset hero__link slide--dog__link">Связаться с нами</a>
+                </div></div>
+              </div>
             </div>
           </div>
+          <div class="swiper-pagination"></div>
+
         </div>
       </div>
     </section>
@@ -83,6 +105,8 @@
       <a class="footer__logo" href="index.html"><img src="./img/logo.svg" alt=""></a>
     </div>
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 
 </html>
