@@ -315,7 +315,7 @@ body {
 
 .article {
   height: 100%;
-  padding: 379px 40px 54px;
+
   border-radius: 40px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
   background-position: center center;
@@ -325,8 +325,40 @@ body {
 
 
 .article--online {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #333333 100%), url('../img/content-dog.png');
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
+
+.article--online__front {
+  grid-area: 1/1;
+  padding: 379px 40px 54px;
+  border-radius: 40px;
+  transition: opacity 0.4s;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #333333 100%), url('../img/content-dog.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.article--online__back {
+  opacity: 0;
+  grid-area: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 48px 62px 49px 40px;
+  transition: opacity 0.4s;
+}
+
+.article--online:hover .article--online__front {
+  opacity: 0;
+}
+
+.article--online:hover .article--online__back {
+  opacity: 1;
+}
+
 
 .article--online__link {
   padding-bottom: 40px;
@@ -335,7 +367,53 @@ body {
   background-position: bottom;
 }
 
+.back-article__title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #394573;
+}
+
+.back-article__price {
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #A0D2DB;
+}
+
+.back-article__list {
+  margin-bottom: 56px;
+}
+
+.back-article__item {
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  margin-bottom: 24px;
+  padding-left: 70px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #333333;
+  background-image: url('../img/check.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.back-article__link {
+  padding: 17px 45px;
+  background-color: #394573;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
 .article--diseases {
+  padding: 379px 40px 54px;
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, #333333 100%), url('../img/content-cat.png');
 }
 
@@ -369,6 +447,44 @@ body {
 @media (max-width: 1024px) {
   .articles__list {
     flex-direction: column;
+  }
+
+  .article--online__front {
+    opacity: 0;
+  }
+
+  .article--online__back {
+    align-items: center;
+    opacity: 1;
+  }
+
+  .back-article__title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .back-article__price {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .back-article__list {
+    margin-bottom: 32px;
+  }
+
+  .back-article__item {
+    margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .back-article__link {
+    padding: 16px 29px;
+    font-size: 14px;
+    line-height: 17px;
   }
 
   .articles__item {
