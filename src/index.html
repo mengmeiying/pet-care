@@ -20,13 +20,17 @@
         <a href="index.html" class="link-reset header__logo">
           <img src="./img/logo.svg" alt="">
         </a>
-        <ul class="list-reset header__nav-list">
-          <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Новости</a></li>
-          <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">О нас</a></li>
-          <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Блог</a></li>
-          <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Услуги</a></li>
-          <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Контакты</a></li>
-        </ul>
+        <div class="burger-menu">
+          <ul class="list-reset header__nav-list">
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Новости</a></li>
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">О нас</a></li>
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Блог</a></li>
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Услуги</a></li>
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Контакты</a></li>
+          </ul>
+          <button class="button-reset burger-menu__close" type="button" aria-label="закрыть меню"></button>
+        </div>
+
         <ul class="list-reset header__socials-list">
           <li class="header__socials-item"><a href="#" class="link-reset"><img src="img/insta.svg" alt=""></a></li>
           <li class="header__socials-item"><a href="#" class="link-reset"><img src="img/telegram.svg" alt=""></a></li>
@@ -50,7 +54,7 @@
                     о ваших питомцах</h2>
                   <p class="text-reset hero__text">Записывайтесь в ветклиники
                     и консультируйтесь с ветеринарным врачом онлайн</p>
-                  <a href="#" class="link-reset hero__link slide--cat__link">Связаться с нами</a>
+                  <a href="#footer" class="link-reset hero__link slide--cat__link">Связаться с нами</a>
                 </div></div>
               </div>
             </div>
@@ -94,7 +98,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container footer__container">
       <div class="footer__links">
         <a href="tel:88009998877" class="footer__link link-reset">8 (800) 999-88-77</a>

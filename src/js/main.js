@@ -7,3 +7,17 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+const burgerOpen = document.querySelector('.burger-button');
+const burgerClose = document.querySelector('.burger-menu__close');
+const socialsList = document.querySelector('.burger-menu');
+const body = document.querySelector('body');
+burgerOpen.addEventListener('click', function() {
+  socialsList.classList.add('burger-menu--active');
+  body.classList.add('stop-scroll')
+})
+
+burgerClose.addEventListener('click', function() {
+  socialsList.classList.remove('burger-menu--active');
+  body.classList.remove('stop-scroll')
+})
