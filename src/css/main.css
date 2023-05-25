@@ -88,6 +88,23 @@ body {
   color: #333333;
 }
 
+.header__nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #394573;
+  transition: width .3s, color .3s;
+}
+
+.header__nav-link:hover::after {
+  width: 100%;
+}
+
+.header__nav-link:hover {
+  color: #394573;
+}
+
 .header__socials-list {
   display: flex;
   gap: 28px;
