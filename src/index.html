@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/graph-modal.min.css">
   <link rel="stylesheet" href="css/montserrat.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Pet Care</title>
@@ -66,7 +67,7 @@
                   <h2 class="title-reset hero__title slide--dog__title">Закажите план заботы</h2>
                   <p class="text-reset hero__text slide--dog__text">Регулярная доставка специально подобранного корма и других товаров для кошек и собак</p>
                   <span class="hero__price">от 1299 ₽/мес</span>
-                  <a href="#" class="link-reset hero__link slide--dog__link">Подобрать план</a>
+                  <button class="button-reset hero__link slide--dog__button">Подобрать план</button>
                 </div></div>
               </div>
             </div>
@@ -121,7 +122,38 @@
       <a class="footer__logo" href="index.html"><img src="./img/logo.svg" alt=""></a>
     </div>
   </footer>
+  <div class="graph-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content modal-form">
+        <h3 class="title-reset modal-form__title">Чтобы подобрать план,
+          необходимо заполнить форму ниже</h3>
+        <form class="modal-form__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <span class="modal-form__text">У меня:</span>
+          <div class="modal-form__wrapper">
+            <label class="modal-form__label">
+              <input class="modal-form__radio radio" type="radio" name="pet" id="cat">
+              <span class="radio__box"></span>
+              Кошка
+            </label>
+          <label class="modal-form__label">
+            <input class="modal-form__radio radio" type="radio" name="pet" id="dog">
+            <span class="radio__box"></span>
+            Собака
+          </label>
+          </div>
+          <input class="modal-form__input" type="text" placeholder="Имя питомца">
+          <input class="modal-form__input" type="text" placeholder="Порода питомца*" required>
+          <input class="modal-form__input" type="text" placeholder="Возраст питомца*" required>
+          <input class="modal-form__input" type="text" placeholder="Ваш номер телефона">
+          <input class="modal-form__input" type="text" placeholder="Ваш email*" required>
+          <button class="modal-form__submit button-reset" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="js/graph-modal.min.js"></script>
   <script src="js/main.js" defer></script>
 </body>
 

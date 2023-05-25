@@ -21,3 +21,10 @@ burgerClose.addEventListener('click', function() {
   socialsList.classList.remove('burger-menu--active');
   body.classList.remove('stop-scroll')
 })
+
+
+const modalOpen = document.querySelector('.slide--dog__button');
+
+modalOpen.addEventListener('click', function() {
+  new GraphModal().open('first');
+})

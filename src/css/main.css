@@ -229,6 +229,7 @@ body {
   color: #FFFFFF;
 }
 
+
 .slide--cat__link {
   background-image: linear-gradient(90deg, #A0D2DB 0%, #726DA8 100%);
 
@@ -258,7 +259,7 @@ body {
   color: #394573;
 }
 
-.slide--dog__link {
+.slide--dog__button {
   background-color: #394573;
 }
 
@@ -568,4 +569,121 @@ body {
   .footer__logo {
     order: -1;
   }
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 592px;
+  padding: 48px 40px;
+  background: #FFFFFF;
+  border-radius: 40px;
+}
+
+.modal-form__title {
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #394573;
+}
+
+.modal-form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form__text {
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #394573;
+}
+
+.modal-form__label {
+  display: inline-block;
+  margin-bottom: 24px;
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #394573;
+}
+
+.modal-form__label:not(:last-child) {
+  margin-right: 20px;
+}
+
+.modal-form__input {
+  border: 0;
+  border-bottom: 1px solid #394573;
+  margin-bottom: 24px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.modal-form__input::placeholder {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #394573;
+}
+
+.modal-form__submit {
+  align-self: center;
+  padding: 17px 87px;
+  background: #394573;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.radio {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.radio__box {
+  position: absolute;
+  margin-left: -30px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #394573;
+  border-radius: 50%;
+}
+
+
+.radio:checked + .radio__box::after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 8px;
+  width: 8px;
+  left: 7px;
+  top: 7px;
+  background-color: #394573;
+  border-radius: 50%;
+}
+
+.radio:focus-visible + .radio__box {
+  outline: 1px solid #726DA8;
+  outline-offset: 2px;
+}
+
+.graph-modal__container {
+  width: initial;
+  border-radius: 0;
+  padding: 0;
+  background-color: initial;
+}
+
+.graph-modal__close {
+  right: 30px;
+  top: 30px;
 }
