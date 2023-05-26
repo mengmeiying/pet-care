@@ -1,3 +1,5 @@
+import './graph-modal.min.js'
+
 const swiper = new Swiper('.swiper', {
   pagination: {
     el: '.swiper-pagination',
