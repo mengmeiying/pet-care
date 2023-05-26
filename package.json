@@ -10,10 +10,12 @@
     "cache": "gulp cache",
     "backend": "gulp backend",
     "zip": "gulp zip",
-    "code": "editorconfig-checker"
+    "code": "editorconfig-checker",
+    "deploy": "gh-pages -d app"
   },
   "author": "",
   "license": "ISC",
+  "homepage": "https://mengmeiying.github.io/pet-care/",
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
@@ -54,5 +56,6 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
