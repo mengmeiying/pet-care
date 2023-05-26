@@ -179,12 +179,19 @@ body {
 }
 
 
-.hero {}
+.hero {
+  position: relative;
+}
 
 .hero__container {
-  position: relative;
   padding-top: 105px;
   padding-bottom: 146px;
+}
+
+.buttons-container {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .hero__content {
