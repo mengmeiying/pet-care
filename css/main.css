@@ -198,10 +198,39 @@ body {
     right: 50px;
   }
 }
-.hero__container {
+.hero {
   position: relative;
+  margin-bottom: 20px;
+}
+
+.hero__container {
   padding-top: 105px;
   padding-bottom: 146px;
+}
+
+.buttons-container {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.swiper-slide {
+  height: initial;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: #BEE7E8;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #394573;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -40px;
 }
 
 .hero__content {
@@ -258,16 +287,16 @@ body {
 }
 
 .slide {
-  background-color: #394573;
-  background-image: url("../img/hero-cat.png");
+  height: 100%;
+  background-image: url("../img/hero-cat.png"), url("../img/ellipse-bg.png");
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
+  background-position: center right 100px, bottom center;
+  background-size: 25%, cover;
 }
 
 .slide--dog {
   background-color: #fff;
-  background-image: url("../img/hero-dog.png");
+  background-image: url("../img/hero-dog.jpg");
   background-position: center center;
   background-size: cover;
 }
@@ -322,6 +351,17 @@ body {
   }
   .swiper-pagination {
     display: block;
+  }
+  .slide {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 24px;
+  }
+  .slide--cat {
+    background-color: #394573;
+    background-image: url("../img/hero-cat.png");
+    background-position: bottom right;
+    background-size: 30%;
   }
 }
 @media (max-width: 768px) {
