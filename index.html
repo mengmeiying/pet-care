@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/graph-modal.min.css">
+  <link rel="stylesheet" href="css/montserrat.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Pet Care</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <nav class="header__nav">
+        <button class="button-reset burger-button" type="button" aria-label="открыть меню"></button>
+        <a href="index.html" class="link-reset header__logo">
+          <img src="./img/logo.svg" alt="">
+        </a>
+        <div class="burger-menu">
+          <ul class="list-reset header__nav-list">
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Новости</a></li>
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">О нас</a></li>
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Блог</a></li>
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Услуги</a></li>
+            <li class="header__nav-item"><a href="#" class="link-reset header__nav-link">Контакты</a></li>
+          </ul>
+          <button class="button-reset burger-menu__close" type="button" aria-label="закрыть меню"></button>
+        </div>
+
+        <ul class="list-reset header__socials-list">
+          <li class="header__socials-item"><a href="https://instagram.com" class="link-reset"><img src="img/insta.svg" alt=""></a></li>
+          <li class="header__socials-item"><a href="https://telegram.com" class="link-reset"><img src="img/telegram.svg" alt=""></a></li>
+          <li class="header__socials-item"><a href="https://vk.com" class="link-reset"><img src="img/vk.svg" alt=""></a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
+  <main>
+    <section class="hero">
+        <div class="swiper hero__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="hero__slide slide slide--cat">
+                <div class="container hero__container"><div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="hero__content">
+                  <h2 class="title-reset hero__title">Мы заботимся
+                    о ваших питомцах</h2>
+                  <p class="text-reset hero__text">Записывайтесь в ветклиники
+                    и консультируйтесь с ветеринарным врачом онлайн</p>
+                  <a href="#footer" class="link-reset hero__link slide--cat__link">Связаться с нами</a>
+                </div></div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="hero__slide slide slide--dog">
+                <div class="container hero__container"><div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="hero__content">
+                  <h2 class="title-reset hero__title slide--dog__title">Закажите план заботы</h2>
+                  <p class="text-reset hero__text slide--dog__text">Регулярная доставка специально подобранного корма и других товаров для кошек и собак</p>
+                  <span class="hero__price">от 1299 ₽/мес</span>
+                  <button class="button-reset hero__link slide--dog__button">Подобрать план</button>
+                </div></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="articles">
+      <div class="container">
+        <ul class="list-reset articles__list">
+          <li class="articles__item">
+            <article class="article article--online">
+              <div class="article--online__front">
+                <h3 class="title-reset article__title"><a href="#" class="link-reset article__link article--online__link">Сколько стоит
+                  онлайн-консультация
+                  с терапевтом?</a></h3>
+              </div>
+              <div class="article--online__back back-article">
+                <h3 class="title-reset back-article__title">Онлайн-консультация
+                  с терапевтом</h3>
+                <span class="back-article__price">от 399 ₽</span>
+                <ul class="list-reset back-article__list">
+                  <li class="back-article__item">Аудио, видео или чат</li>
+                  <li class="back-article__item">Продолжительность до 60 минут</li>
+                  <li class="back-article__item">Подробный отчет после консультации: что сделать сейчас, чтобы стало лучше</li>
+                </ul>
+                <a class="link-reset back-article__link" href="#">Начать консультацию</a>
+              </div>
+            </article>
+          </li>
+          <li class="articles__item">
+            <article class="article article--diseases">
+              <h3 class="title-reset article__title article--diseases__title">Самые болезненные породы кошек: топ-5</h3>
+              <p class="text-reset article__text">Среди кошачьих пород есть несколько, отличающихся слабым здоровьем.
+              </p>
+              <a href="#" class="link-reset article__link article--diseases__link">Все статьи о кошках</a>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="container footer__container">
+      <div class="footer__links">
+        <a href="tel:88009998877" class="footer__link link-reset">8 (800) 999-88-77</a>
+        <a href="mailto:info@petcare.com" class="footer__link link-reset">info@petcare.com</a>
+      </div>
+      <small class="footer__copyright">©2021 PetCare. Все права защищены </small>
+      <a class="footer__logo" href="index.html"><img src="./img/logo.svg" alt=""></a>
+    </div>
+  </footer>
+  <div class="graph-modal">
+    <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="first">
+      <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+      <div class="graph-modal__content modal-form">
+        <h3 class="title-reset modal-form__title">Чтобы подобрать план,
+          необходимо заполнить форму ниже</h3>
+        <form class="modal-form__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+          <span class="modal-form__text">У меня:</span>
+          <div class="modal-form__wrapper">
+            <label class="modal-form__label">
+              <input class="modal-form__radio radio" type="radio" name="pet" id="cat">
+              <span class="radio__box"></span>
+              Кошка
+            </label>
+          <label class="modal-form__label">
+            <input class="modal-form__radio radio" type="radio" name="pet" id="dog">
+            <span class="radio__box"></span>
+            Собака
+          </label>
+          </div>
+          <input class="modal-form__input" type="text" placeholder="Имя питомца">
+          <input class="modal-form__input" type="text" placeholder="Порода питомца*" required>
+          <input class="modal-form__input" type="text" placeholder="Возраст питомца*" required>
+          <input class="modal-form__input" type="text" placeholder="Ваш номер телефона">
+          <input class="modal-form__input" type="text" placeholder="Ваш email*" required>
+          <button class="modal-form__submit button-reset" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>
