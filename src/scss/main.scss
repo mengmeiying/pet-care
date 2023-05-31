@@ -153,7 +153,7 @@ body {
 
   .burger-menu--active {
     transform: translateY(0);
-    z-index: 5;
+    z-index: 11;
     opacity: 1;
 
 
@@ -573,6 +573,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 30px;
 }
 
 .footer__links {
@@ -595,6 +596,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+  text-align: center;
   color: #394573;
 }
 
